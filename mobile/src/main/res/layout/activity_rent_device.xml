@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RentDeviceActivity">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设备租赁"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 设备类型选择 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择设备类型"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_device_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 设备配置选择 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设备配置"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="基础版 (2GB RAM / 16GB 存储)"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标准版 (4GB RAM / 32GB 存储)" />
+
+        <RadioButton
+            android:id="@+id/radio_premium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="高级版 (6GB RAM / 64GB 存储)" />
+    </RadioGroup>
+
+    <!-- 租赁时长选择 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="租赁时长"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_1_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1个月 (￥30/月)"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_3_months"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3个月 (￥28/月，共￥84)" />
+
+        <RadioButton
+            android:id="@+id/radio_6_months"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6个月 (￥25/月，共￥150)" />
+
+        <RadioButton
+            android:id="@+id/radio_12_months"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12个月 (￥20/月，共￥240)" />
+    </RadioGroup>
+
+    <!-- 价格摘要 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="总价: ¥30.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 确认租赁按钮 -->
+    <Button
+        android:id="@+id/btn_rent_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认租赁"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white" />
+
+</LinearLayout> 

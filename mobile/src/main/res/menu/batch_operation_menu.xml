@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_batch_add"
+        android:title="批量新增"
+        android:icon="@android:drawable/ic_input_add" />
+    
+    <item
+        android:id="@+id/action_batch_renew"
+        android:title="批量续费"
+        android:icon="@android:drawable/ic_menu_recent_history" />
+    
+    <item
+        android:id="@+id/action_group_management"
+        android:title="分组管理"
+        android:icon="@android:drawable/ic_menu_sort_by_size" />
+    
+    <item
+        android:id="@+id/action_batch_restart"
+        android:title="重启"
+        android:icon="@android:drawable/ic_menu_rotate" />
+    
+    <item
+        android:id="@+id/action_batch_restore"
+        android:title="恢复出厂"
+        android:icon="@android:drawable/ic_menu_revert" />
+    
+    <item
+        android:id="@+id/action_batch_change"
+        android:title="更换云手机"
+        android:icon="@android:drawable/ic_menu_edit" />
+    
+    <item
+        android:id="@+id/action_batch_transfer"
+        android:title="转移手机"
+        android:icon="@android:drawable/ic_menu_send" />
+    
+    <item
+        android:id="@+id/action_batch_upload"
+        android:title="上传应用"
+        android:icon="@android:drawable/ic_menu_upload" />
+    
+    <item
+        android:id="@+id/action_batch_clone"
+        android:title="复制云号"
+        android:icon="@android:drawable/ic_menu_copy" />
+    
+    <item
+        android:id="@+id/action_batch_other"
+        android:title="其他操作"
+        android:icon="@android:drawable/ic_menu_more" />
+</menu> 

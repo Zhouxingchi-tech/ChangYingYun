@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="连接设置">
+        <EditTextPreference
+            app:key="server_url"
+            app:title="服务器地址"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue=""
+            app:dialogTitle="输入服务器地址" />
+
+        <SwitchPreferenceCompat
+            app:key="auto_start"
+            app:title="开机自动启动"
+            app:summary="设备启动后自动连接服务器" />
+
+        <SwitchPreferenceCompat
+            app:key="auto_reconnect"
+            app:title="自动重连"
+            app:summary="连接断开后自动尝试重新连接"
+            app:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="画面设置">
+        <EditTextPreference
+            app:key="video_quality"
+            app:title="视频质量"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="60"
+            app:dialogTitle="输入视频质量(1-100)" />
+
+        <SwitchPreferenceCompat
+            app:key="high_performance"
+            app:title="高性能模式"
+            app:summary="更流畅的画面，但会增加设备发热和耗电"
+            app:defaultValue="false" />
+
+        <EditTextPreference
+            app:key="resolution"
+            app:title="画面分辨率"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="720p"
+            app:dialogTitle="选择分辨率" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="控制设置">
+        <EditTextPreference
+            app:key="control_delay"
+            app:title="控制延迟"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="200"
+            app:dialogTitle="输入控制延迟(毫秒)" />
+
+        <SwitchPreferenceCompat
+            app:key="enable_touchvibration"
+            app:title="触控震动"
+            app:summary="接收到触控命令时震动反馈"
+            app:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="高级设置">
+        <SwitchPreferenceCompat
+            app:key="debug_mode"
+            app:title="调试模式"
+            app:summary="启用详细日志记录"
+            app:defaultValue="false" />
+
+        <Preference
+            app:key="clear_data"
+            app:title="清除数据"
+            app:summary="清除所有缓存和设置数据" />
+
+        <Preference
+            app:key="about"
+            app:title="关于畅速云"
+            app:summary="版本信息及说明" />
+    </PreferenceCategory>
+
+</PreferenceScreen> 

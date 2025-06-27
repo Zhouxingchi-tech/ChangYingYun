@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_rent_device"
+        android:title="租赁新设备" />
+ 
+    <item
+        android:id="@+id/action_connect_device"
+        android:title="连接已有设备" />
+</menu> 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_single_view"
+        android:title="单视图" />
+    
+    <item
+        android:id="@+id/action_4_grid"
+        android:title="4宫格视图" />
+    
+    <item
+        android:id="@+id/action_9_grid"
+        android:title="9宫格视图" />
+    
+    <item
+        android:id="@+id/action_16_grid"
+        android:title="16宫格视图" />
+    
+    <item
+        android:id="@+id/action_36_grid"
+        android:title="36宫格视图" />
+    
+    <item
+        android:id="@+id/action_list_view"
+        android:title="列表视图" />
+</menu> 

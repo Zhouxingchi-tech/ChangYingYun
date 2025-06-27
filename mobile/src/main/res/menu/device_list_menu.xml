@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_view_mode"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="视图模式"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/action_group_filter"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="分组过滤"
+        app:showAsAction="always" />
+    
+    <item
+        android:id="@+id/action_batch"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="批量操作"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="刷新"
+        app:showAsAction="ifRoom" />
+</menu> 

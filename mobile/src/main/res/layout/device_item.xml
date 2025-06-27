@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 设备缩略图 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:id="@+id/device_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#E0E0E0" />
+
+            <!-- 设备设置按钮 -->
+            <ImageView
+                android:id="@+id/device_settings"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end|top"
+                android:padding="6dp"
+                android:background="@android:drawable/ic_menu_more" />
+
+            <!-- 剩余时间 -->
+            <TextView
+                android:id="@+id/device_days_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:background="#80000000"
+                android:padding="4dp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:text="剩26天14时" />
+
+            <!-- 设备选择框 -->
+            <CheckBox
+                android:id="@+id/device_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <!-- 设备信息底部栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#F5F5F5">
+
+            <!-- 标签 - 可以用不同颜色标识不同类型设备 -->
+            <TextView
+                android:id="@+id/device_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFCCCC"
+                android:textColor="#FF6666"
+                android:padding="2dp"
+                android:layout_marginEnd="4dp"
+                android:textSize="10sp"
+                android:text="OEM" />
+
+            <!-- 设备名称 -->
+            <TextView
+                android:id="@+id/device_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="设备名称" />
+
+            <!-- 设备状态 -->
+            <TextView
+                android:id="@+id/device_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#009900"
+                android:text="在线" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

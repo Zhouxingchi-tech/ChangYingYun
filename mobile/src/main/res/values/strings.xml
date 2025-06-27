@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">畅速云</string>
+    <string name="accessibility_service_description">此服务允许远程控制设备，包括点击、滑动、输入文本等操作。用于畅速云远程控制功能。</string>
+</resources> 
