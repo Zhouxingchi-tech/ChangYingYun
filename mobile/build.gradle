@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace "com.screencast.noadb"
     compileSdk 33
 
     defaultConfig {
@@ -27,7 +28,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    namespace "com.screencast.noadb" // 确保 namespace 设置正确
 }
 
 dependencies {
