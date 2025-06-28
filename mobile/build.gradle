@@ -27,7 +27,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    namespace "com.screencast.noadb"
+    namespace "com.screencast.noadb" // 确保 namespace 设置正确
 }
 
 dependencies {
@@ -53,4 +53,4 @@ dependencies {
     
     // Media projection
     implementation 'androidx.media:media:1.6.0'
-} 
+}
