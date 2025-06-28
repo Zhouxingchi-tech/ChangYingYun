@@ -1,4 +1,4 @@
-rootProject.name = "ScreencastNoADB"
+rootProject.name = "com.screencast.noadb"
 include ':mobile'
 
 dependencyResolutionManagement {
